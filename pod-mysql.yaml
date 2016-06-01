@@ -5,16 +5,16 @@ metadata:
   labels:
     app: mysql
 spec:
-  volumes:
-  - name: mysql-storage
-    hostPath:
-      path: /var/kube-test/mysql-db
+#  volumes:
+#  - name: mysql-storage
+#    hostPath:
+#      path: /var/kube-test/mysql-db
   containers:
   - name: mysql
     image: mysql
-    volumeMounts:
-    - name: mysql-storage
-      mountPath: /var/lib/mysql
+#    volumeMounts:
+#    - name: mysql-storage
+#      mountPath: /var/lib/mysql
     ports:
     - containerPort: 3306
     env:
