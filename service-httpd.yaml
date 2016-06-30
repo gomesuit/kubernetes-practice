@@ -6,5 +6,6 @@ spec:
   type: NodePort
   ports:
     - port: 80
+      nodePort: 30000
   selector:
     app: httpd
